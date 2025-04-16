@@ -73,8 +73,8 @@ pipeline {
                     to: "ollie.parks321@gmail.com",
                     subject: "Jenkins Pipeline - ${currentBuild.currentResult}",
                     body: "The Jenkins Pipeline for task 8.1C is complete with status: ${currentBuild.currentResult}. \nAttached are the logs for the test and security stages.",
-                    attachmentsPattern: "console-*.log",
-                    attachLog: false
+                    //attachmentsPattern: "console-*.log",
+                    //attachLog: false
                 )
             }
         }
