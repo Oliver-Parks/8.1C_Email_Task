@@ -64,12 +64,6 @@ pipeline {
                 echo "Deploying application to production environment (e.g. AWS EC2)..."
             }
         }
-        stage('Test Network') {
-            steps {
-                sh 'ping -c 3 smtp.gmail.com || true'
-                sh 'nc -zv smtp.gmail.com 587 || true'
-    }
-}
     }
     // Emailing the result and logs for test and security stage
     post{
